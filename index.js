@@ -146,9 +146,9 @@ app.get("/user/:_id",async(req,res)=>{
   }
          
 })
-app.listen(PORT,()=>{
+app.listen(PORT,()=>
   connectDB()
     .then((data)=>console.log("server is running"))
     .catch((err)=> console.log(err))
-})
+)
 
